@@ -3,12 +3,12 @@ Contributors: bosathemes
 Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
 Requires at least: 5.0
 Requires PHP: 5.6
-Tested up to: 6.6
-Stable tag: 1.0.6
+Tested up to: 6.7
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Hello Shoppable WordPress Theme, Copyright 2024 Bosa Themes
+Hello Shoppable WordPress Theme, Copyright 2025 Bosa Themes
 Hello Shoppable is distributed under the terms of the GNU General Public License v3
 
 Hello Shoppable is beautiful, fast, lightweight, responsive, extremely customizable, multipurpose ecommerce theme with beautifully crafted design.
@@ -24,6 +24,9 @@ Hello Shoppable is beautiful multipurpose ecommerce theme. Hello Shoppable is be
 Hello Shoppable includes support for WooCommerce, Elementor, Breadcrumb NavXT and Contact From 7.
 
 == Changelog ==
+
+= 1.0.7 =
+* Style fix.
 
 = 1.0.6 =
 * Style update.
@@ -48,17 +51,38 @@ Hello Shoppable includes support for WooCommerce, Elementor, Breadcrumb NavXT an
 
 == Resources ==
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* Normalize.css http://necolas.github.io/normalize.css [MIT]
-* Bootstrap http://getbootstrap.com [MIT]
-* Kirki https://kirki.org/ [MIT]
-* Slick https://kenwheeler.github.io/slick/ [MIT]
-* Slicknav https://github.com/ComputerWolf/SlickNav [MIT]
+* Normalize.css 
+  Source: http://necolas.github.io/normalize.css 
+  License URL: https://github.com/necolas/normalize.css/blob/master/LICENSE.md [MIT]
+
+* Bootstrap 
+  Source: http://getbootstrap.com
+  License URL: https://github.com/twbs/bootstrap/blob/main/LICENSE [MIT]
+
+* Kirki 
+  Source: https://github.com/themeum/kirki/ https://wordpress.org/plugins/kirki/ 
+  License URL: https://github.com/themeum/kirki/blob/master/LICENSE [MIT]
+
+* Slick 
+  Source: https://kenwheeler.github.io/slick/ 
+  License URL: https://github.com/kenwheeler/slick/blob/master/LICENSE [MIT]
+
+* Slicknav 
+  Source: https://github.com/ComputerWolf/SlickNav 
+  License URL: https://github.com/ComputerWolf/SlickNav/blob/master/MIT-LICENSE.txt [MIT]
+
 * Font Awesome http://fontawesome.io/
   Icons — CC BY 4.0 License
   Fonts — SIL OFL 1.1 License
   Code  — MIT License
-* Theia Sticky Sidebar https://github.com/WeCodePixels/theia-sticky-sidebar [MIT]
-* wptt-webfont-loader.php https://opensource.org/licenses/MIT
+
+* Theia Sticky Sidebar 
+  Source: https://github.com/WeCodePixels/theia-sticky-sidebar
+  License URL: https://github.com/WeCodePixels/theia-sticky-sidebar/blob/master/LICENSE.txt [MIT]
+
+* wptt-webfont-loader.php
+  License URL: https://opensource.org/licenses/MIT
+  
 * Image for theme screenshot, Copyright pxhere
   License: CC0 1.0 Universal (CC0 1.0)
   License URL: https://pxhere.com/en/license
@@ -89,8 +113,8 @@ Hello Shoppable includes support for WooCommerce, Elementor, Breadcrumb NavXT an
   License URL: https://pxhere.com/en/license
   Source: https://pxhere.com/en/photo/718970
 
-  Logo, Copyright 2024 Bosa Themes
+  Logo, Copyright 2025 Bosa Themes
   License: GNU General Public License v3 http://www.gnu.org/licenses/gpl-3.0.html
 
-  Illustrations and icons used in Screenshot, Copyright 2024 Bosa Themes
+  Illustrations and icons used in Screenshot, Copyright 2025 Bosa Themes
   License: GNU General Public License v3 http://www.gnu.org/licenses/gpl-3.0.html

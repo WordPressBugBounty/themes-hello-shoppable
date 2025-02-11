@@ -4,15 +4,15 @@ Theme URI: https://bosathemes.com/hello-shoppable
 Author: Bosa Themes
 Author URI: https://bosathemes.com
 Description: Hello Shoppable is beautiful multipurpose ecommerce theme. Hello Shoppable is beautiful, fast, lightweight, responsive, extremely customizable, multipurpose ecommerce theme that you can use as a foundation to build versatile sites such as ecommerce, online business, shop and stores and preferably ideal for any type of sites. Hello Shoppable works perfectly with Gutenberg and the most popular page builder Elementor that can easily drag-and-drop your ideas from the interface. Hello Shoppable is built with SEO, speed, and usability in mind with the multiple Header & Footer layouts, predesigned starter sites includes awesome Home & Inner Pages that is incredibly customizable and powerful enough to take a stand among the crowd. Hello Shoppable is compatible with all major plugins like WooCommerce, Yoast, Contact form 7, Mailchimp for WordPress, bbPress, etc. Looking for a multipurpose ecommerce theme? Look no further! Browse the demos to see that it's the only theme you will ever need: https://demo.bosathemes.com/shoppable/hello-shoppable
-Version: 1.0.6
+Version: 1.0.7
 Requires PHP: 5.6
-Tested up to: 6.6
+Tested up to: 6.7
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: hello-shoppable
 Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
 
-Hello Shoppable WordPress Theme, Copyright 2024 Bosa Themes
+Hello Shoppable WordPress Theme, Copyright 2025 Bosa Themes
 Hello Shoppable is distributed under the terms of the GNU General Public License v3
 
 Hello Shoppable is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
@@ -882,7 +882,7 @@ form label {
   }
 }
 .main-navigation ul.menu > li:hover > ul, .main-navigation ul.menu > li:focus > ul, .main-navigation ul.menu > li:active > ul, .main-navigation ul.menu > li:focus-within > ul, .main-navigation ul.menu > li.focus > ul {
-  display: block;
+  left: auto;
 }
 .main-navigation ul.menu > li:hover > a, .main-navigation ul.menu > li:focus > a, .main-navigation ul.menu > li:active > a, .main-navigation ul.menu > li:focus-within > a, .main-navigation ul.menu > li.focus > a {
   color: #2154ac;
@@ -895,10 +895,9 @@ form label {
   transform: rotate(180deg);
 }
 .main-navigation ul.menu ul {
-  display: none;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  left: 0;
+  left: -999rem;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -938,13 +937,13 @@ form label {
   color: #2154ac;
 }
 .main-navigation ul.menu ul li > ul {
-  left: 100%;
   top: 40px;
 }
 .main-navigation ul.menu ul li.menu-item-has-children > a:after, .main-navigation ul.menu ul li.page_item_has_children > a:after {
   content: "\f0da";
 }
 .main-navigation ul.menu ul li:hover > ul, .main-navigation ul.menu ul li:focus > ul, .main-navigation ul.menu ul li:active > ul, .main-navigation ul.menu ul li:focus-within > ul, .main-navigation ul.menu ul li.focus > ul {
+  left: 100%;
   display: block;
   top: -1px;
 }
@@ -6648,6 +6647,110 @@ body.site-layout-frame .header-ten .hgroup-wrap {
   margin-bottom: 20px;
 }
 
+.the-product-share {
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 0;
+  text-align: center;
+  clear: both;
+  margin-bottom: 15px;
+}
+.the-product-share ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.the-product-share ul li {
+  border: 0;
+  border-right-width: 1px;
+  border-style: solid;
+  border-color: #e9e9e9;
+  padding: 15px 20px;
+}
+.the-product-share ul li:last-child {
+  border-right: 0;
+}
+.the-product-share ul li a {
+  display: block;
+  border: 0;
+  width: auto;
+  height: auto;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 !important;
+  border-radius: 0;
+}
+.the-product-share ul li a .the-icon-wrap {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #333333;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.the-product-share ul li a .the-icon-wrap .the-icon {
+  fill: #fff;
+  width: 16px;
+  height: 16px;
+}
+.the-product-share ul li a .product-share-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 10px;
+  width: calc(100% - 50px);
+  color: #404040;
+}
+.the-product-share ul li.twitter a:hover .product-share-text {
+  color: #00aced;
+}
+.the-product-share ul li.twitter a:hover .the-icon-wrap {
+  background-color: #00aced;
+}
+.the-product-share ul li.facebook a:hover .product-share-text {
+  color: #3b5998;
+}
+.the-product-share ul li.facebook a:hover .the-icon-wrap {
+  background-color: #3b5998;
+}
+.the-product-share ul li.pinterest a:hover .product-share-text {
+  color: #cb2027;
+}
+.the-product-share ul li.pinterest a:hover .the-icon-wrap {
+  background-color: #cb2027;
+}
+.the-product-share ul li.email a:hover .product-share-text {
+  color: #3fc387;
+}
+.the-product-share ul li.email a:hover .the-icon-wrap {
+  background-color: #3fc387;
+}
+
 /*--------------------------------------------------------------
 # Compatiable
 ----------------------------------------------------------------*/
@@ -8267,6 +8370,12 @@ body[class*=woocommerce] ul.products li.product-list .woo-product-image img {
   font-weight: normal;
   display: inline-block;
 }
+.product-detail-wrapper .entry-summary .yith-wcwl-wishlistaddedbrowse a:before {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: normal;
+  display: inline-block;
+}
 .product-detail-wrapper .entry-summary .yith-wcwl-add-to-wishlist a,
 .product-detail-wrapper .entry-summary .compare {
   color: #030303;
@@ -8564,6 +8673,139 @@ body[class*=woocommerce] .widget.widget_products li .reviewer {
   background-color: #2154ac;
   color: #ffffff;
 }
+.product-compare-wishlist .yith-add-to-wishlist-button-block {
+  margin: 0;
+}
+.product-compare-wishlist .yith-add-to-wishlist-button-block .yith-wcwl-add-to-wishlist-button:has(svg) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-compare-wishlist .yith-add-to-wishlist-button-block .yith-wcwl-add-to-wishlist-button:has(svg) svg {
+  margin: 0;
+  width: 16px;
+  stroke-width: 2px;
+  vertical-align: middle;
+}
+.product-compare-wishlist .yith-add-to-wishlist-button-block .yith-wcwl-add-to-wishlist-button:has(svg):not(:has(.info-tooltip)) span {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 1.3;
+  padding: 4px 10px;
+  position: absolute;
+  top: -25px;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: top 0.4s;
+  -moz-transition: top 0.4s;
+  -ms-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  transition: top 0.4s;
+}
+.product-compare-wishlist .yith-add-to-wishlist-button-block .yith-wcwl-add-to-wishlist-button:has(svg):hover svg {
+  color: #ffffff;
+}
+.product-compare-wishlist .yith-add-to-wishlist-button-block .yith-wcwl-add-to-wishlist-button:has(svg):hover span {
+  top: -35px;
+  visibility: visible;
+}
+
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-add-button .add_to_wishlist:has(svg) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-add-button .add_to_wishlist:has(svg) svg {
+  margin: 0;
+  width: 15px;
+  stroke-width: 2px;
+  vertical-align: middle;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-add-button .add_to_wishlist:has(svg):not(:has(.info-tooltip)) span {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 1.3;
+  padding: 4px 10px;
+  position: absolute;
+  top: -25px;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: top 0.4s;
+  -moz-transition: top 0.4s;
+  -ms-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  transition: top 0.4s;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-add-button .add_to_wishlist:has(svg):hover svg {
+  color: #ffffff;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-add-button .add_to_wishlist:has(svg):hover span {
+  top: -35px;
+  visibility: visible;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-wishlistaddedbrowse .feedback {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 1.3;
+  padding: 4px 10px;
+  position: absolute;
+  top: -25px;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  visibility: hidden;
+  width: fit-content;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: top 0.4s;
+  -moz-transition: top 0.4s;
+  -ms-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  transition: top 0.4s;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-wishlistaddedbrowse .feedback svg {
+  display: none;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-wishlistaddedbrowse:hover .feedback {
+  top: -35px;
+  visibility: visible;
+  opacity: 1;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-wishlistaddedbrowse a {
+  font-size: 0;
+  overflow: hidden;
+}
+body[class*=woocommerce] ul.products li .product-compare-wishlist .yith-wcwl-wishlistaddedbrowse a:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: 900;
+  font-size: 13px;
+}
 
 .woocommerce .products .product:hover .product-compare-wishlist {
   visibility: visible;
@@ -8615,6 +8857,10 @@ body[class*=woocommerce] .widget.widget_products li .reviewer {
   clear: both;
 }
 
+.wp-block-woocommerce-cart-items-block .wc-block-components-product-name {
+  color: inherit;
+}
+
 .wc-block-cart__submit-button,
 .wc-block-components-button,
 .wc-block-components-totals-coupon a {
@@ -8646,6 +8892,10 @@ body[class*=woocommerce] .widget.widget_products li .reviewer {
 .product-compare-wishlist .sp_preview_area {
   position: static;
   transform: none;
+}
+
+.wp-block-woocommerce-cart-totals-block .wc-block-components-totals-coupon__form input {
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
