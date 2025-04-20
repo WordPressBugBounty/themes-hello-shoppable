@@ -514,7 +514,10 @@ require get_template_directory() . '/inc/getting-started/getting-started.php';
 /**
  * Theme Info.
  */
-require_once get_parent_theme_file_path( '/inc/theme-info/theme-info.php' );
+function hello_shoppable_theme_info_load() {
+	require get_theme_file_path( '/inc/theme-info/theme-info.php' );
+}
+add_action( 'init', 'hello_shoppable_theme_info_load' );
 
 /**
  * Load Jetpack compatibility file.
