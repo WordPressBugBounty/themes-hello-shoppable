@@ -58,7 +58,7 @@ class Hello_Shoppable_Notice_Handler {
                 echo ('<div class="fs-notice success"><p>'.esc_html__( 'Plugins added successfully. You may dismiss this notice now.','hello-shoppable' ).'</p></div>');
             }else{
                 /* translators: %s - Theme name*/
-                echo ( '<p><strong>' . sprintf( esc_html__( 'Welcome! Thank you for choosing %1$s!. To fully take advantage of the best our theme can offer, get started.','hello-shoppable' ), esc_attr ( $theme->get( 'Name' ) ) ) . '</strong></p><p class="plugin-notice">'.esc_html__( 'Clicking on get started will install and activate Bosa Elementor Addons for WooCommerce, Kirki, Advanced Import, Keon Toolset, Elementor, ElementsKit Lite, Contact Form 7, WooCommerce and Classic Widgets.', 'hello-shoppable' ).'</p><p><a href="#" class="hello-shoppable-install-plugins button button-primary">' . sprintf( esc_html__( 'Get started with %s','hello-shoppable' ), esc_attr ( $theme->get( 'Name' ) ) ) . '</a></p>' );
+                echo ( '<p><strong>' . sprintf( esc_html__( 'Welcome! Thank you for choosing %1$s!. To fully take advantage of the best our theme can offer, get started.','hello-shoppable' ), esc_attr ( $theme->get( 'Name' ) ) ) . '</strong></p><p class="plugin-notice">'.esc_html__( 'Clicking on get started will install and activate Bosa Elementor Addons for WooCommerce, Kirki, Advanced Import, Keon Toolset, Elementor, ElementsKit Lite, Contact Form 7, WooCommerce, Classic Widgets and Smart Related Products.', 'hello-shoppable' ).'</p><p><a href="#" class="hello-shoppable-install-plugins button button-primary">' . sprintf( esc_html__( 'Get started with %s','hello-shoppable' ), esc_attr ( $theme->get( 'Name' ) ) ) . '</a></p>' );
             }
             echo '<a href="' . esc_url( wp_nonce_url( add_query_arg( 'gs-notice-dismissed', 'dismiss_admin_notices' ) ) ) . '" class="getting-started-notice-dismiss">Dismiss</a>';
             echo '</div>';
@@ -151,6 +151,9 @@ class Hello_Shoppable_Notice_Handler {
             wp_send_json_error();
         }
         if( $request == 9 && strpos( $slug, 'classic-widgets' ) === false ){
+            wp_send_json_error();
+        }
+        if( $request == 10 && strpos( $slug, 'ai-related-products' ) === false ){
             wp_send_json_error();
         }
         if ( file_exists( WP_PLUGIN_DIR . '/' . $slug ) ) {

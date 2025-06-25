@@ -131,9 +131,26 @@ jQuery( document ).ready( function($) {
                                                                                                                 request : 9
                                                                                                             },
                                                                                                             success:function( response ) {
-                                                                                                                var extra_uri, redirect_uri, dismiss_nonce;
-                                                                                                                redirect_uri         = hello_shoppable_adi_install.adminurl+'/themes.php?page=advanced-import&browse=all';
-                                                                                                                window.location.href = redirect_uri;
+                                                                                                                 setTimeout( function(){
+                                                                                                                    $.ajax({
+                                                                                                                        type: "POST",
+                                                                                                                        url: ajaxurl,
+                                                                                                                        data: {
+                                                                                                                            action     : 'hello_shoppable_getting_started',
+                                                                                                                            security : hello_shoppable_adi_install.nonce,
+                                                                                                                            slug : 'ai-related-products',
+                                                                                                                            request : 10
+                                                                                                                        },
+                                                                                                                        success:function( response ) {
+                                                                                                                            var extra_uri, redirect_uri, dismiss_nonce;
+                                                                                                                            redirect_uri         = hello_shoppable_adi_install.adminurl+'/themes.php?page=advanced-import&browse=all';
+                                                                                                                            window.location.href = redirect_uri;
+                                                                                                                        },
+                                                                                                                        error: function( xhr, ajaxOptions, thrownError ){
+                                                                                                                            console.log( thrownError );
+                                                                                                                        }
+                                                                                                                    });
+                                                                                                                }, 500);
                                                                                                             },
                                                                                                             error: function( xhr, ajaxOptions, thrownError ){
                                                                                                                 console.log( thrownError );

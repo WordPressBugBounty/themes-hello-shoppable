@@ -4,7 +4,7 @@ Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 6.8
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -24,6 +24,9 @@ Hello Shoppable is beautiful multipurpose ecommerce theme. Hello Shoppable is be
 Hello Shoppable includes support for WooCommerce, Elementor, Breadcrumb NavXT and Contact From 7.
 
 == Changelog ==
+
+= 1.0.9 =
+* Getting started plugin added.
 
 = 1.0.8 =
 * Style fix.

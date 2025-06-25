@@ -1,3 +1,6 @@
+= 1.0.9 =
+* Getting started plugin added.
+
 = 1.0.8 =
 * Style fix.
 * Translation loading early fix.
