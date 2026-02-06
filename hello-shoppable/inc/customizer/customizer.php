@@ -12568,7 +12568,7 @@ function hello_shoppable_kirki_fields(){
 				'variant'         => 'regular',
 				'font-style'      => 'normal',
 				'font-size'       => '15px',
-				'line-height'     => '1.6',
+				'line-height'     => '1.8',
 				'letter-spacing'  => '0',
 				'text-transform'  => 'uppercase',
 				'text-decoration' => 'none',
@@ -12576,7 +12576,46 @@ function hello_shoppable_kirki_fields(){
 			],
 			'output'   => array(
 				array(
-					'element' 	=> array('.woocommerce #respond input#submit', '.woocommerce a.button', '.woocommerce button.button', '.woocommerce input.button', '.woocommerce a.button.alt', '.woocommerce button.button.alt','.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt.disabled','.woocommerce .product-inner .add_to_cart_button','.woocommerce .product-inner .added_to_cart')
+					'element' 	=> array('.woocommerce #respond input#submit', '.woocommerce a.button', '.woocommerce button.button', '.woocommerce input.button', '.woocommerce a.button.alt', '.woocommerce button.button.alt','.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt.disabled')
+				)
+			),
+		]
+	);
+
+	Kirki::add_field( 'hello-shoppable', array(
+	    'type'        => 'custom',
+	    'settings'    => 'woocommerce_button_typography_border',
+	    'section'     => 'woocommerce_buttons_options',
+	    'default'  => wp_kses( '<hr class="customizer_separator">', array(
+			    'hr' => array(
+			      'class' => array(),
+			    ),
+		  	)
+		),
+	    'priority'	  => 120,
+	) );
+
+	new \Kirki\Field\Typography(
+	[
+		'settings'    => 'woocommerce_product_item_button_typography',
+		'label'       => esc_html__( 'Product Item Button Text Typography', 'hello-shoppable' ),
+		'section'     => 'woocommerce_buttons_options',
+		'priority'    => 130,
+		'transport'   => 'auto',
+		'default'     => [
+			'font-family'     => 'Inter',
+			'variant'         => 'regular',
+			'font-style'      => 'normal',
+			'font-size'       => '12px',
+			'line-height'     => '1.6',
+			'letter-spacing'  => '0',
+			'text-transform'  => 'uppercase',
+			'text-decoration' => 'none',
+			'text-align'      => '',
+		],
+		'output'   => array(
+			array(
+				'element' 	=> array('.woocommerce .product-inner .add_to_cart_button','.woocommerce .product-inner .added_to_cart')
 				)
 			),
 		]

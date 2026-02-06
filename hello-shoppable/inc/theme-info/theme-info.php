@@ -1516,10 +1516,7 @@ $config = array(
         ),
         'Advanced Import' => array(
             'slug' => 'advanced-import'
-        ),
-        'Smart Related Products' => array(
-            'slug' => 'ai-related-products'
-        ),
+        )
     ),
 
     // Support content tab.

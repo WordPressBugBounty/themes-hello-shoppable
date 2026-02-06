@@ -1296,7 +1296,7 @@ if( !function_exists( 'hello_shoppable_primary_menu_alignment' ) ){
 */
 if( !function_exists( 'hello_shoppable_all_gs_plugin_active' ) ){
 	function hello_shoppable_all_gs_plugin_active() {
-		if( is_plugin_active( 'advanced-import/advanced-import.php' ) && is_plugin_active( 'keon-toolset/keon-toolset.php' ) && is_plugin_active( 'kirki/kirki.php' ) && is_plugin_active( 'elementor/elementor.php' ) && is_plugin_active( 'elementskit-lite/elementskit-lite.php' ) && is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) && is_plugin_active( 'bosa-elementor-for-woocommerce/bosa-elementor-for-woocommerce.php' ) && is_plugin_active( 'woocommerce/woocommerce.php' ) && is_plugin_active( 'classic-widgets/classic-widgets.php' ) && is_plugin_active( 'ai-related-products/ai-related-products.php' ) ){
+		if( is_plugin_active( 'advanced-import/advanced-import.php' ) && is_plugin_active( 'keon-toolset/keon-toolset.php' ) && is_plugin_active( 'kirki/kirki.php' ) && is_plugin_active( 'elementor/elementor.php' ) && is_plugin_active( 'elementskit-lite/elementskit-lite.php' ) && is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) && is_plugin_active( 'bosa-elementor-for-woocommerce/bosa-elementor-for-woocommerce.php' ) && is_plugin_active( 'woocommerce/woocommerce.php' ) && is_plugin_active( 'classic-widgets/classic-widgets.php' ) ){
 			return true;
 		}else{
 			return false;

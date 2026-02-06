@@ -3,12 +3,12 @@ Contributors: bosathemes
 Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
 Requires at least: 5.0
 Requires PHP: 5.6
-Tested up to: 6.8
-Stable tag: 1.0.9
+Tested up to: 6.9
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Hello Shoppable WordPress Theme, Copyright 2025 Bosa Themes
+Hello Shoppable WordPress Theme, Copyright 2026 Bosa Themes
 Hello Shoppable is distributed under the terms of the GNU General Public License v3
 
 Hello Shoppable is beautiful, fast, lightweight, responsive, extremely customizable, multipurpose ecommerce theme with beautifully crafted design.
@@ -120,8 +120,8 @@ Hello Shoppable includes support for WooCommerce, Elementor, Breadcrumb NavXT an
   License URL: https://pxhere.com/en/license
   Source: https://pxhere.com/en/photo/718970
 
-  Logo, Copyright 2025 Bosa Themes
+  Logo, Copyright 2026 Bosa Themes
   License: GNU General Public License v3 http://www.gnu.org/licenses/gpl-3.0.html
 
-  Illustrations and icons used in Screenshot, Copyright 2025 Bosa Themes
+  Illustrations and icons used in Screenshot, Copyright 2026 Bosa Themes
   License: GNU General Public License v3 http://www.gnu.org/licenses/gpl-3.0.html
